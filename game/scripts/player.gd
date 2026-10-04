@@ -28,7 +28,10 @@ func update_facing_direction():
 		else:
 			facing_direction = "up"
 
-
+func player():
+	pass
+	
+	
 # This function updates the current animation
 func update_animation(): 
 	if velocity.length() == 0:

@@ -2,6 +2,7 @@
 
 [ext_resource type="TileSet" uid="uid://clpmsm65xuqi0" path="res://game/tileset/tiile_set.tres" id="1_w4uif"]
 [ext_resource type="PackedScene" uid="uid://b8wlr0h4euymg" path="res://game/scenes/player.tscn" id="2_o4ehl"]
+[ext_resource type="PackedScene" uid="uid://bfppxrwvn82sb" path="res://game/scenes/enemy_skeleton.tscn" id="3_2g1qt"]
 
 [node name="TileMap" type="Node2D" unique_id=1114206]
 
@@ -10,4 +11,7 @@ tile_map_data = PackedByteArray("AAAcAA4AAAAFAAIAAAAcAA0AAAACAAEAAAAcAAwAAAACAAE
 tile_set = ExtResource("1_w4uif")
 
 [node name="Player" parent="." unique_id=1427507561 instance=ExtResource("2_o4ehl")]
-position = Vector2(228, 154)
+position = Vector2(223, 153)
+
+[node name="Skeleton" parent="." unique_id=414603758 instance=ExtResource("3_2g1qt")]
+position = Vector2(394, 232)
