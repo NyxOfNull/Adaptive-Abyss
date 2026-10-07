@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://ddbaorsjwpqkt"]
+
+[ext_resource type="Texture2D" uid="uid://budwm7h6cqx4c" path="res://assets/Guns/PixelWeapons.png" id="1_b14fe"]
+[ext_resource type="Script" uid="uid://mgxy3muwf2my" path="res://game/scripts/handgun.gd" id="1_t81xs"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b14fe"]
+atlas = ExtResource("1_b14fe")
+region = Rect2(3, 4, 26, 6)
+
+[node name="Handgun" type="Node2D" unique_id=87573984]
+script = ExtResource("1_t81xs")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=35573195]
+position = Vector2(11, 0)
+texture = SubResource("AtlasTexture_b14fe")
+region_rect = Rect2(48, 144, 14, 7)
+region_filter_clip_enabled = true
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=691624999]
+position = Vector2(26.67, -0.43)
